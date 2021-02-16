@@ -1,0 +1,16 @@
+
+<div class="container d-flex justify-content-center align-items-center">
+  <div card="card p-3">
+<h1>My tasks</h1>
+
+
+<ul>
+  <% @tasks.each do |task| %>
+    <li class="list-item"><%= task.title %>
+    <%= link_to "Show task", task_path(task), class: "show_link" %>
+    </li>
+  <% end %>
+</ul>
+    <%= link_to "Create new task", tasks_new_path %>
+</div>
+</div>

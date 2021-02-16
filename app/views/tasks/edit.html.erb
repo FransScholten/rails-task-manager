@@ -1,0 +1,10 @@
+<div class="container d-flex justify-content-center align-items-center">
+  <div card="card p-3">
+    <%= simple_form_for(@task) do |f| %>
+      <%= f.input :title %>
+      <%= f.input :details %>
+      <%= f.input :completed %>
+      <%= f.submit %>
+    <% end %>
+  </div>
+</div>
